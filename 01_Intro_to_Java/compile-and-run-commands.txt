@@ -1,0 +1,40 @@
+We should create a temporary folder C:\myexample. 
+Then we should copy our file "SumTwoNumbers.java" in the folder above. After that we must
+run Command Prompt and type:
+
+C:\> cd \myexample
+
+This makes C:\myexample the current directory.
+
+
+C:\myexample> dir
+
+This displays the directory content. You should see "SumTwoNumbers.java" among the files.
+
+
+C:\myexample> set path=%path%;C:\Program Files\Java\jdk1.8.0_20\bin
+
+This tells the system where to find JDK programs.
+
+
+C:\myexample> javac SumTwoNumbers.java
+
+This runs javac.exe, the compiler. You should see nothing, but the next system prompt.
+
+
+C:\myexample> dir
+
+javac has created the "SumTwoNumbers.class" file. You should see "SumTwoNumbers.java" and 
+"SumTwoNumbers.class" among the files.
+
+
+C:\myexample> java SumTwoNumbers
+
+This runs the Java interpreter. You should see the program output.It will be blank at fist,
+you should type two numbers and their sum will be the output.
+
+
+If the system cannot find javac, check the set path command.  If the program compiles but
+you get an exception, check the spelling and capitalization in the file name and the class
+name and the java "SumTwoNumbers" command.
+
